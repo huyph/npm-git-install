@@ -60,7 +60,7 @@ reinstall = (options = {}, pkg) ->
 
       .then () ->
         # Gather some metadata that can be displayed and saved later
-        cmd = "git show --format=format:%h --no-patch"
+        cmd = "git show --format=format:%h"
         if verbose then console.log "executing `#{cmd}` in `#{tmp}`"
 
         sha = cp
